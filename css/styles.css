@@ -143,7 +143,7 @@ body {
   color: var(--accent-color);
 }
 
-.link .current {
+.site-nav .active {
   color: var(--accent-color);
 }
 /* hero */
@@ -234,6 +234,12 @@ body {
   line-height: 1.71;
 }
 
+.thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .work-list {
   display: flex;
   justify-content: center;
@@ -259,13 +265,16 @@ body {
 .team-list .item {
   margin: 15px;
   width: 270px;
-  padding-bottom: 30px;
+
   background-color: var(--secondary-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
+.team .description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .team .names {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -408,7 +417,7 @@ body {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.footer .list {
+.footer-list {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -421,22 +430,22 @@ body {
   color: #ffffff;
 }
 
-.city {
-  color: #ffffff;
+.footer-list > .item:not(:last-of-type) {
   margin-bottom: 9px;
 }
 
-.mail,
-.tel {
+.footer-list .city {
+  color: #ffffff;
+}
+
+.footer-list .mail,
+.footer-list .tel {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail {
-  margin-bottom: 9px;
-}
-.city,
-.mail,
-.tel {
+.footer-list .city,
+.footer-list .mail,
+.footer-list .tel {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
